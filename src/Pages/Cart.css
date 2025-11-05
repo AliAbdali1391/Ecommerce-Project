@@ -1,0 +1,18 @@
+#main {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cdicp {
+  border: solid rgb(116, 112, 112) 1px;
+  width: 900px;
+  min-height: 180px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}/*# sourceMappingURL=Cart.css.map */
