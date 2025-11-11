@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function Home () {
+export default function Home ({ onAddToCart }) {
   return (
     <>
       <br />
@@ -22,7 +22,7 @@ export default function Home () {
           />
           <img
             src='https://themewagon.github.io/stylish/images/card-image3.jpg'
-            alt='shoe2'
+            alt='shoe3'
             width={700}
             height={590}
             id='shoe3'
@@ -53,15 +53,31 @@ export default function Home () {
 
       <div className='pl'>
         {[1, 2, 3, 4, 5].map(i => (
-          <span>
+          <span key={i}>
             <img
               src={`https://themewagon.github.io/stylish/images/card-item${i}.jpg`}
               width={280}
               height={280}
               className='pipl'
             />
-            <span className='pao'>
-              Running shoes for men <b>$99</b>
+            <span className='tabfei'>
+              <span className='pao'>
+                Running shoes for men <b>$99</b>
+              </span>
+              &nbsp;&nbsp;
+              <button
+                className='atcb'
+                onClick={() =>
+                  onAddToCart({
+                    name: `Running shoes for men ${i}`,
+                    price: 99,
+                    image: `https://themewagon.github.io/stylish/images/card-item${i}.jpg`,
+                    cartid: crypto.randomUUID()
+                  })
+                }
+              >
+                Add To Cart
+              </button>
             </span>
           </span>
         ))}

@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-#cdicp {
+.page {
     border: solid rgb(116, 112, 112) 1px;
     width: 900px;
     min-height: 180px;
@@ -15,4 +15,33 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    flex-direction: column;
+}
+
+.cart-item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-image {
+    border-radius: 10px;
+}
+
+.deletebtn {
+    margin-left: 20px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-color: red;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
 }

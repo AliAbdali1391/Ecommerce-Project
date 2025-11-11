@@ -238,3 +238,23 @@ body {
 td {
     text-align: center;
 }
+
+.atcb {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.atcb:hover {
+    background-color: rgb(87, 86, 86);
+    border-color: rgb(87, 86, 86);
+}
+
+.tabfei {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
