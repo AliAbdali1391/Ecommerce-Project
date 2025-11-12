@@ -70,7 +70,7 @@ export default function Home ({ onAddToCart }) {
                 onClick={() =>
                   onAddToCart({
                     name: `Running shoes for men ${i}`,
-                    price: 99,
+                    price: 90+i*10,
                     image: `https://themewagon.github.io/stylish/images/card-item${i}.jpg`,
                     cartid: crypto.randomUUID()
                   })
